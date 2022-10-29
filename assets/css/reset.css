@@ -1,0 +1,67 @@
+:root {
+  --color-form-submit-btn: #0d3fe288;
+  --color-form-submit-btn-hover: #2758f7;
+  --color-form-reset-btn: rgba(216, 5, 5, 0.6);
+  --color-form-reset-btn-hover: rgb(240, 0, 0);
+  --color-border: #eee;
+  --color-border-focus: #ccc;
+
+  --border-radius: 0.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: var(--color-body-bg);
+  position: relative;
+  transition: all 0.2s ease;
+}
+.body {
+  background: url("./../imgs/bg-day.jpg") no-repeat bottom center;
+  background-size: cover;
+}
+
+.bg-day {
+  background: url("./../imgs/bg-day.jpg") no-repeat bottom;
+  background-size: cover;
+}
+
+.bg-night {
+  background: url("./../imgs/bg.jpg") no-repeat bottom;
+  background-size: cover;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid var(--color-border);
+  outline: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  border-radius: var(--border-radius);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-border-focus);
+}
+
+input[type="submit"],
+input[type="reset"] {
+  border: none;
+}
+
+/* Utilities classes */
+.label {
+  font-size: 0.8rem;
+}

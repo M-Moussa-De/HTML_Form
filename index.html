@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script defer src="/assets/js/app.js"></script>
+</head>
+
+<body class="body">
+
+  <header class="change-mode">
+    <i class="fa-solid fa-sun sun hide"></i>
+    <i class="fa-solid fa-moon moon show"></i>
+  </header>
+
+  <main>
+
+    <section class="form">
+
+      <form method="POST">
+
+        <header>
+          <h1>Signup form</h1>
+          <span>Bitte geben Sie Ihre Daten ein</span>
+        </header>
+
+        <div class="row">
+          <label for="vorname">Vorname:</label>
+          <input type="text" id="vorname" name="vorname" autocomplete="off" spellcheck="off" autofocus>
+        </div>
+
+        <div class="row">
+          <label for="nachname">Nachname:</label>
+          <input type="text" id="nachname" name="nachname" autocomplete="off" spellcheck="off">
+        </div>
+
+        <div class="row">
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email" autocomplete="off" spellcheck="off">
+        </div>
+
+        <div class="row">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+        </div>
+
+        <div class="row">
+          <label for="auswahl">Auswahl:</label>
+          <select name="auswahl" id="auswahl">
+            <option selected disabled>--</option>
+            <option value="1">Opt1</option>
+            <option value="2">Opt2</option>
+            <option value="3">Opt3</option>
+            <option value="4">Opt4</option>
+          </select>
+        </div>
+
+        <div>
+          <fieldset>
+            <legend class="label">Persönliche Daten</legend>
+
+            <section>
+              <p class="label">Gender:</p>
+              <article>
+                <input type="radio" id="male" name="gender" value="m">
+                <label for"male" class="label">Männlich</label>
+              </article>
+
+              <article>
+                <input type="radio" id="female" name="gender" value="f">
+                <label for"female" class="label">Weiblich</label>
+              </article>
+
+              <article>
+                <input type="radio" id="na" name="gender" value="n">
+                <label for"na" class="label">Lieber nicht sagen</label>
+              </article>
+            </section>
+
+
+
+          </fieldset>
+        </div>
+
+        <div class="btns">
+          <input type="submit" value="Anmelden" class="submit">
+          <input type="reset" value="Zurücksetezn" class="delete">
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
